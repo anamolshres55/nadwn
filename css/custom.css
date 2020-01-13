@@ -1,0 +1,921 @@
+body {
+    font-size: 12px;
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+p {
+    text-align: justify;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header CSS Begins */
+
+.top-header {
+    color: white;
+    background-color: #4270ce;
+}
+
+.top-header .navbar {
+    padding: 0.10rem 1rem;
+}
+
+.top-left li:hover {
+    color: #000000;
+    cursor: pointer;
+}
+
+.top-right li {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.top-contact,
+.top-email {
+    font-size: 1.05rem;
+}
+
+.top-facebook,
+.top-twitter,
+.top-linkedin {
+    font-size: 1.20rem;
+    color: #ffffff;
+    transition: 0.5s;
+
+}
+
+.top-facebook:hover,
+.top-twitter:hover,
+.top-linkedin:hover {
+    color: white;
+
+}
+
+.bottom-header {
+    background-color: #f1f1f2;
+}
+
+.custom-toggle i {
+    color: #4270ce;
+}
+
+.navbar-img-container {
+    width: 20%;
+}
+
+.bottom-right {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.navbar-img-container img {
+    width: 80%;
+}
+
+.navbar-menu>li>a {
+    color: #4270ce;
+    font-size: 1rem;
+}
+
+.nav-item:after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #4270ce;
+    transition: 0.2s
+}
+
+.nav-item:hover::after {
+    width: 90%;
+}
+
+.dropdown-item {
+    color: #4270ce;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.dropdown-item:after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #4270ce;
+    transition: 0.2s;
+}
+
+.dropdown-item:hover,
+.dropdown-item:active {
+    color: #4270ce;
+    background-color: #f1f1f2;
+}
+
+.dropdown-item:hover:after {
+    width: 90%;
+}
+
+.donate-btn {
+    border-radius: 0px;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: #4270ce;
+    font-size: 1rem;
+}
+
+.donate-btn:hover {
+    background: #000000;
+    border-color: white;
+}
+
+/* Header CSS Ends */
+
+
+/* Slideshow CSS Begins */
+
+.slideshow-container {
+    position: relative;
+}
+
+.slide1 {
+    background-image: url("../img/slide1.jpg");
+    background-size: cover;
+    height: 90vh;
+    min-height: 300px;
+}
+
+.slide2 {
+    background-image: url('../img/slide2.jpg');
+    background-size: cover;
+    height: 90vh;
+    min-height: 300px;
+}
+
+.slide3 {
+    background-image: url("../img/slide3.jpg");
+    background-size: cover;
+    height: 90vh;
+    min-height: 300px;
+}
+
+.slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.slide-text h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 1.75rem;
+}
+
+.slide-text p {
+    font-size: 1rem;
+    color: white;
+}
+
+.black-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.5;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 100;
+
+}
+
+/* Slideshow CSS Ends */
+
+/* About Us Begins */
+    .about-us-heading p {
+        font-size: 1.10rem;
+    }
+
+    .about-us-img-container{
+        background: url("../img/image3.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .about-us-text-container {
+        font-size: 1.10rem;
+        background-color: #4270ce;
+        color: white;
+    }
+
+/* About US  Section Ends */
+
+/* Recent Activities Section Begins */
+
+.activities-grid {
+    background-color: #f1f1f2;
+}
+
+.activities-heading {
+    color: #000000;
+}
+
+.activities-heading p {
+    font-size: 1.10rem;
+}
+
+.activities-post {
+    padding: 2rem;
+}
+
+.activity-post-title {
+    font-size: 1.15rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.activity-post-text {
+    font-size: 0.90rem;
+}
+
+/* Recent Activities Section Ends */
+
+/* Featured Article Container Begins */
+.featured-article-container {
+    position: relative;
+    background: url("../img/image1.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+}
+
+.featured-image-container img {
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+}
+
+.featured-article-textcontent {
+    position: absolute;
+    z-index: 100;
+}
+
+.featured-article-title {
+    color: #ffffff;
+    font-size: 1.75rem;
+    font-weight: 900;
+    margin-top: 1em;
+}
+
+.featured-article-semi-title {
+    color: #4270ce;
+    background-color: white;
+    padding: 10px 20px;
+    font-weight: 900;
+    font-size: 1.15rem;
+}
+
+.featured-article-text {
+    color: #ffffff;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+/* Featured Article Container Ends */
+
+/* Join us Container Begins */
+.join-section-container {
+    background-image: url(../img/image4.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.join-section-contents {
+    position: relative;
+    z-index: 100;
+}
+
+.join-title {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 900;
+}
+
+.join-sub-title {
+    font-size: 1.5rem;
+    font-family: 'Dosis', sans-seif;
+    padding: 1rem;
+    position: relative;
+    line-height: 2;
+}
+
+.volunteer-btn {
+    border-radius: 0px;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: #E0001D;
+}
+
+.volunteer-btn:hover {
+    background: transparent;
+}
+
+/* Join us Container Ends */
+
+/* Team Image Container Begins */
+
+.team-heading p {
+    font-size: 1.10rem;
+}
+
+.team-image-container {
+    height: auto;
+}
+
+
+.team-member-information {
+    text-align: center;
+    border-top: none;
+    color: #000000;
+    background-color: #f1f1f2;
+
+}
+
+.team-image-container:hover,
+.team-member-information:hover {
+    cursor: pointer;
+}
+
+.team-member-information:hover {
+    color: #ffffff;
+    background: #000000;
+}
+
+.team-member-name {
+    font-size: 1.50rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+}
+
+.team-member-position {
+    font-weight: bold;
+}
+
+.team-member-social-wrapper {
+    list-style-type: none;
+    padding: 0;
+}
+
+.team-member-social-wrapper li {
+    display: inline;
+    padding: 0.50rem;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Team Image Container Ends */
+
+/* Events Container Begins */
+.events-heading p {
+    font-size: 1.10rem;
+}
+
+.events-img-container,
+.events-content-container {
+    position: relative;
+}
+
+.events-info-heading {
+    position: absolute;
+    top: 50px;
+    left: 16px;
+    z-index: 100;
+}
+
+.events-info-heading em {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #4270ce;
+    color: white;
+    padding: 10px 20px;
+}
+
+.events-info-text {
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    color: white;
+    z-index: 100;
+    font-size: 0.90rem;
+}
+
+/* Events Container Ends */
+
+/* Footer Begins */
+
+footer {
+    background-color: #f1f1f2;
+
+}
+
+.footer-contact {
+    background-color: #4270ce;
+    color: #ffffff;
+}
+
+.footer-logo {
+    width: 60%;
+}
+
+.useful-links,
+.bottom-contact {
+    color: #4270ce;
+    font-size: 1.05rem;
+}
+
+.footer-social {
+    font-size: 1.75rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+
+/* Footer Ends */
+
+
+/* About Us Page CSS Begins */
+
+.page-top-heading {
+    background-image: url("../img/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 150px;
+    width: 100%;
+    position: relative;
+}
+
+.page-top-heading-contents h2 {
+    position: relative;
+    z-index: 100;
+    display: inline-block;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 10px 0px;
+}
+
+
+
+.introduction-image-container img,
+.objectives-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.introduction-text-container,
+.objectives-text-container {
+    font-size: 1.05rem;
+}
+
+.introduction-text-container p,
+.objectives-text-container p {
+    font-size: 1rem;
+}
+
+.volunteer-title p {
+    font-size: 1.10rem;
+}
+
+.volunteer-information {
+    text-align: center;
+}
+
+.volunteer-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.volunteer-name {
+    font-size: 1.20rem;
+    font-weight: bold;
+}
+
+.volunteer-area {
+    font-size: 1rem;
+    color: #4270ce;
+}
+
+/* About Us Page CSS Ends */
+
+
+/* Activity CSS Begins */
+
+.activity-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.activity-list-item {
+    background-color: #e0e0e8;
+
+}
+
+
+.activity-information-container h4 {
+    font-weight: bold;
+}
+
+.activity-information-container p {
+    font-size: 1rem;
+}
+
+.donation-progress {
+    height: 1.50rem;
+    border-radius: 1px;
+    background-color: #ffffff;
+}
+
+.donation-bar {
+    background-color: #4270ce;
+    font-size: 1.20rem;
+}
+
+.donation-amount {
+    display: block;
+    font-size: 1rem;
+}
+
+.view-more-btn {
+    color: white;
+    background-color: #4270ce;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+.view-more-btn:hover {
+    color: #4270ce;
+    background-color: #ffffff;
+    border-color: #4270ce;
+}
+
+.activity-donate-btn {
+    color: #4270ce;
+    background-color: #ffffff;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px solid #4270ce;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+
+.activity-donate-btn:hover {
+    background-color: #4270ce;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+/* Activity CSS Ends */
+
+/* Future Plan CSS Begins */
+.future-title p {
+    font-size: 1rem;
+}
+
+.future-plan-title h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+
+}
+
+.future-plan-box {
+    background-image: url(../img/image2.jpg);
+    box-shadow: inset 0 0 0 2000px rgb(66, 112, 206, 0.8);
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.future-plan-icon>.fa-stack>.fa-circle {
+    color: rgb(224, 0, 29, 1);
+}
+
+.future-plan-icon {
+    text-align: center;
+}
+
+.future-plan-heading {
+    font-size: 1.10rem;
+}
+
+.future-plan-text p {
+    font-size: 1rem;
+}
+
+/* Future Plan CSS Ends */
+
+/* Gallery Pager Begins */
+
+container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    padding: 30px 50px;
+}
+
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: #999;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .row>div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00e";
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgb(66, 112, 206, 0.8);
+    color: white;
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
+
+.gallery-title {
+    background-color: rgb(66, 112, 206, 0.8);
+    font-weight: bold;
+    color: white;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Gallery Page Ends */
+
+/* Event Page Begins */
+.event-title {
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.event-container {
+    background-color: #f1f1f2;
+    border: 2px solid #4270ce;
+}
+
+.event-location-container i {
+    color: #4270ce;
+    font-size: 1.10rem;
+}
+
+.event-time,
+.event-location {
+    font-size: 1rem;
+}
+
+.event-title-container h6 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.event-information-text {
+    font-size: 1rem;
+}
+
+.event-view-btn {
+    background-color: #4270ce;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.event-image-container {
+    position: relative;
+
+}
+
+.event-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.event-date-container {
+    font-size: 1.75rem;
+}
+
+.event-date-month {
+    display: inline-block;
+    width: 64%;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    background-color: #4270ce;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+}
+
+.view-more-container {
+    position: relative;
+}
+
+.share-to-social {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    font-size: 1.75rem;
+
+}
+
+/* Event Page Ends */
+
+
+/* Contact Page Begins */
+
+.send-message-heading,
+.contact-info-heading {
+    font-weight: bold;
+    font-size: 1.75rem;
+    margin: 1.5rem;
+}
+
+.single-contact-info input {
+    width: 100%;
+    padding: 0.5rem 0.25rem;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.message-area-container textarea {
+    width: 100%;
+    margin: 1.5rem 0;
+    height: 150px;
+}
+
+.send-btn {
+    font-size: 1rem;
+    background-color: #4270ce;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+
+}
+
+.contact-item-details h6 {
+    font-size: 1.5rem;
+}
+
+.contact-item-details small {
+    font-size: 1rem;
+}
+
+.contact-item-icon .fa-stack {
+    color: #4270ce;
+
+}
+
+.map-container {
+    width: 100%;
+    height: 400px;
+}
+
+/* Contact Page Ends */
+
+/* Event Detail Begins */
+
+.event-details-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+.event-details-description {
+    font-size: 1rem;
+}
+
+.event-details-share {
+    text-align: center;
+
+}
+
+.event-facebook-share , .event-twitter-tweet , .event-googleplus-share {
+    display : inline-block; 
+    color: white;
+    padding : 5px 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.event-facebook-share {
+    background-color: #4267b2;
+   
+}
+
+.event-twitter-tweet {
+    background-color: #1DA1F2;
+}
+
+.event-googleplus-share {
+    background-color: #DD4B39;
+}
+
+.recent-event-image-container {
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+.recent-events-title {
+    font-weight: bold;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.recent-event-description {
+    font-size: 0.90rem;
+}
+/* Event Detail Ends */
